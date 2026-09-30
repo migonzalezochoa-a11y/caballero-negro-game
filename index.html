@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caballero Negro — 8-bit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="title-bar">
+        <span>caballero negro</span>
+        <span>demo 8-bit</span>
+      </div>
+
+      <div class="game-shell">
+        <canvas id="game" width="1280" height="720"></canvas>
+
+        <div id="hint" class="hint">
+          WASD mover · L espada · K giro · ESPACIO poder · E montar/desmontar nave
+        </div>
+
+        <div id="death" class="death-screen">
+          <h1>HAS MUERTO</h1>
+          <button onclick="restart()">REINICIAR JUEGO</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
